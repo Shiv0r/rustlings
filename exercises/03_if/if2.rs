@@ -2,8 +2,10 @@
 fn picky_eater(food: &str) -> &str {
     if food == "strawberry" {
         "Yummy!"
+    } else if food == "potato" {
+        "I guess I can eat that."
     } else {
-        1
+        "No thanks!"
     }
 }
 
@@ -11,7 +13,6 @@ fn main() {
     // You can optionally experiment here.
 }
 
-// TODO: Read the tests to understand the desired behavior.
 // Make all tests pass without changing them.
 #[cfg(test)]
 mod tests {
