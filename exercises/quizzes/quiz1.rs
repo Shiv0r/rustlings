@@ -8,9 +8,19 @@
 // - However, if Mary buys more than 40 apples, the price of each apple in the
 // entire order is reduced to only 1 rustbuck!
 
-// TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
+
+fn calculate_price_of_apples(number_of_apples: i32) -> i32 {
+    let should_apply_discount: bool = number_of_apples > 40;
+    let rustbucks: i32 = number_of_apples;
+
+    if should_apply_discount {
+        rustbucks
+    } else {
+        rustbucks * 2
+    }
+}
 
 fn main() {
     // You can optionally experiment here.
